@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration Hackathon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5%;
+      background-color: #fff;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: #e63946;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 3rem 5%;
+      background-color: #fafafa;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero-text span {
+      color: #e63946;
+    }
+
+    .hero-text p {
+      color: #555;
+      margin-bottom: 0.3rem;
+    }
+
+    .btn {
+      background-color: #e63946;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #c92a3a;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+      min-width: 300px;
+    }
+
+    .hero-image img {
+      max-width: 80%;
+    }
+
+    /* About Section */
+    .about {
+      padding: 2rem 5%;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      max-width: 600px;
+      color: #555;
+      margin: 0.5rem auto;
+    }
+
+    /* Event Details */
+    .details {
+      padding: 2rem 5%;
+    }
+
+    .details h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .details ul {
+      list-style: none;
+      color: #444;
+    }
+
+    .details li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* 📸 Image Styling — Makes all images the same clean size */
+    .about img,
+    .details img {
+      width: 70px;          /* same width */
+      height: 70px;         /* same height */
+      object-fit: cover;    /* keeps proportions nicely */
+      border-radius: 10px;  /* rounded corners */
+      margin: 0.5rem auto;
+      display: block;
+    }
+
+    .details li img {
+      margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .about, .details {
+        text-align: center;
+      }
+
+      .details li {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">EVENT</div>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Event<br>Registration<br>Hackathon</h1>
+      <p>Sign up to our event and celebrate</p>
+      <p>the art of technology with us.</p>
+      <button class="btn">Register Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="young-woman-working-her-office-vector-flat-style-cartoon-illustration_357257-1570.jpg" alt="Woman with laptop">
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Event</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <img src="360_F_1659843762_1PNKra56ojrbIp45nI7dkPHajheFwQtN.jpg" alt="23 APRIL">
+    <p><strong>April 23, 2024</strong><br>10:00 AM - 9:00 PM</p>
+  </section>
+
+  <section class="details">
+    <h2>Event Details</h2>
+    <ul>
+      <li>
+        <img src="3_300x300_Front_Color-NA.jpg" alt="SCHEDULE">
+       <h2> Schedule </h2> - Lorem ipsum pere ocom
+      </li>
+      <li>
+        <img src="H2x1_Support_Nintendo_Account_image1280w.jpg" alt="SPEAKERS">
+       <h2> Speakers </h2>- Lorem ipsum pere ocom
+      </li>
+      <li>
+        <img src="images69.png" alt="WORKSHOPS">
+        <h2> Workshops </h2> - Lorem ipsum pere ocom
+      </li>
+      <li>
+        <img src="unnamed.jpg" alt="PRIZES">
+        <h2> Prizes </h2> - Lorem ipsum pere ocom
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Event Registration Hackathon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
